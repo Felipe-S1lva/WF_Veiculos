@@ -1,0 +1,80 @@
+.table {
+    font-size: 15px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.table thead th {
+    color: grey;
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    border-top: 2px solid #dee2e6;
+    border-right: 2px solid #dee2e6;
+}
+.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+}
+th {
+    text-align: inherit;
+}
+th img{
+    height: 30px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+}
+.times{
+    display: contents;
+    font-size: 25px;
+}
+.ucl{
+    font-size: 25px;
+    color: green;
+}
+.uel{
+    font-size: 25px;
+    color: #020282;
+}
+.meio{
+    font-size: 25px;
+    color: gray;
+}
+.playoff{
+    font-size: 25px;
+    color: orange;
+}
+.rebaixados{
+    font-size: 25px;
+    color: red;
+}
+.legendas{
+    text-align: justify;
+    padding: 5px;
+}
+.legendas p{
+    margin: 15px 0 10px 0;
+}
+.classificação strong{
+    margin: 0px 10px 0px;
+    line-height: 3;
+    font-size: 25px;
+}
+.pved{
+    display: flex;
+}
+.dados {
+    margin: auto 6px 0 5px;
+}

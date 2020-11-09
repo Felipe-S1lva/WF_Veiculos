@@ -1,0 +1,158 @@
+@media only screen and (max-width: 480px){
+    .topo{
+        margin: 0px;
+        width: 131%;
+    }
+}
+header{
+    position: fixed;
+    background: brown;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+header .logo{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    position: relative;
+}
+header nav ul li a{
+    color: white;
+}
+header nav ul li.sub-menu:before{
+    content: url(../img/baixo.png);
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    left: 64px;
+}
+header nav ul li.active.sub-menu:before{
+    content: url(../img/cima.png);
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 14px;
+    left: 64px;
+}
+header nav ul li ul{
+    position: absolute;
+    left: 0;
+    background: brown;
+    display: none;
+}
+header nav ul li.active ul{
+    display: block;
+}
+header nav ul li ul li{
+    display: block;
+    width: 188px;
+}
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active
+{
+    color: brown;
+    background: white;
+}
+.menu-toggle{
+    color: white;
+    float: right;
+    line-height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 991px){
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        width: 60%;
+        height: calc(50vh - 50px);
+        background: brown;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+        border-radius: 2px;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        display: block;
+    }
+    header nav ul li a{
+        color: white;
+        border-bottom: 1px solid rgb(197, 197, 197);;
+    }
+    #pesquisa{
+        padding-left: 5px;
+    }
+    #title {
+        padding: 85px 85px 0 85px;
+        font-size: 40px;
+        margin: 0;
+    }
+    #pesquisa{
+        margin-left: 10px;
+        margin-top: 8px;
+        float: left;
+        top: 10px;
+        height: 30px;
+    }
+    header nav ul li.active ul {
+        position: relative;
+        background: brown;
+        border-radius: 2px;
+    }
+    header nav ul li ul li {
+        width: 100%;
+    }
+    .fundoimg img{
+        width: 100%;
+        height: 245px;
+    }
+}
+@media (max-width: 888px){
+        .caixa-texto{
+            display: inline;
+        }    
+        .caixa-texto img{
+        padding: 10px;
+        height: 11em;
+    }
+    .textos{
+        padding: 10px;
+        line-height: 40px;
+        text-align: justify;
+    }
+
+}
